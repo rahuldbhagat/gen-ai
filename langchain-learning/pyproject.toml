@@ -1,0 +1,31 @@
+[project]
+name = "langchain-learning"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Rahul Bhagat", email = "rahuldbhagat@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "langchain>=1.4.4",
+    "langchain-chroma>=1.1.0",
+    "langchain-classic>=1.0.8",
+    "langchain-community>=0.4.2",
+    "langchain-core>=1.6.9",
+    "langchain-ollama>=1.1.0",
+    "langchain-openai>=1.7.0",
+    "langchain-postgres>=0.0.19",
+    "langchain-text-splitters>=1.1.3",
+    "numpy>=2.4.6",
+    "openai>=3.28.0",
+    "python-dotenv>=1.2.4",
+    "sqlalchemy>=2.1.4",
+]
+
+[project.scripts]
+langchain-learning = "langchain_learning:main"
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"
